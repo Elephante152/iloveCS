@@ -44,7 +44,7 @@ a:hover {
   max-width: 600px;
 }
 .logo-img {
-  width: 40%;
+  width: 30%;
   max-width: 200px;
   height: auto;
   animation: rotate 10s infinite linear;
@@ -103,13 +103,14 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
   margin: 1rem 0;
+  width: 100%;
 }
 input::placeholder {
   color: #949393;
 }
 .form-group input.form-control {
   flex: 1;
-  min-width: 200px;
+  min-width: 0;
   height: 40px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -126,6 +127,7 @@ input::placeholder {
   cursor: pointer;
   color: #fff;
   padding: 0 20px;
+  flex-shrink: 0;
 }
 .form-group button.submit-button:hover {
   background-color: #222630;
@@ -160,19 +162,22 @@ input::placeholder {
 
 @media (max-width: 599px) {
   .logo-img {
-      width: 30%;
+      width: 50%;
       max-width: 150px;
   }
   .main-content h1 {
       font-size: 1.5em;
   }
   .form-group input.form-control {
-      width: 100%;
+      border-radius: 20px;
       margin-bottom: 10px;
       background: #e4edf7;
   }
   .form-group button.submit-button {
       width: 100%;
       border-radius: 20px;
+  }
+  #countdown-clock {
+      font-size: 1em;
   }
 }
