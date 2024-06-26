@@ -4,10 +4,10 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
   background-color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 a, button {
@@ -20,8 +20,8 @@ a {
 a:hover {
   color: #0043ee;
 }
-#background-video {
-  position: absolute;
+#background-container {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -29,11 +29,14 @@ a:hover {
   overflow: hidden;
   z-index: -1;
 }
-#background-video video {
+#background-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1.0 ; /* Adjusted opacity for less transparency */
 }
 .container {
   text-align: center;
@@ -42,12 +45,14 @@ a:hover {
   padding: 2rem;
   width: 90%;
   max-width: 600px;
+  margin: 2rem auto;
 }
 .logo-img {
   width: 30%;
   max-width: 200px;
   height: auto;
   animation: rotate 10s infinite linear;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3)); /* Reduced drop shadow */
 }
 @keyframes rotate {
   from {
@@ -62,15 +67,32 @@ a:hover {
   color: #666;
   margin-top: 1rem;
   font-style: italic;
+  background: rgba(255, 255, 255, 0.5); /* More transparent background */
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
 }
 .slogan strong {
   font-weight: bold;
+  color: #333; /* Darker color for keywords */
 }
 .main-content h1 {
   font-size: 2em;
   font-weight: 700;
-  color: #000;
+  color: #000; /* Updated color for "We are launching soon!" */
   margin-bottom: 1rem;
+}
+.notification-text {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #000; /* Updated color for "Get notified when we launch our website" */
+  margin-bottom: 1rem;
+}
+.text-box {
+  background: rgba(255, 255, 255, 0.7); /* Transparent background for text */
+  padding: 0.5rem 1rem; /* Reduced padding for less empty space */
+  border-radius: 5px;
+  display: inline-block;
 }
 #countdown-clock {
   font-size: 1.2em;
@@ -156,8 +178,9 @@ input::placeholder {
   color: #111;
 }
 .copyright p {
-  color: #626262;
-  margin-top: 1rem;
+  color: #333; /* Darker color for footer text */
+  margin-top: 0.5rem;
+  font-size: 0.8rem; /* Smaller footer text */
 }
 
 @media (max-width: 599px) {
@@ -167,6 +190,9 @@ input::placeholder {
   }
   .main-content h1 {
       font-size: 1.5em;
+  }
+  .notification-text {
+      font-size: 1em;
   }
   .form-group input.form-control {
       border-radius: 20px;
