@@ -46,15 +46,26 @@ a:hover {
   max-width: 600px;
   margin: auto; /* Center the container */
 }
-.logo-img {
-  width: 10%;
-  max-width: 60px;
-  height: auto;
-  animation: rotate 10s infinite linear;
-  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3)); /* Reduced drop shadow */
+.logo-wrapper {
   position: fixed;
   top: 10px;
   left: 10px;
+}
+.logo-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background: #1f5743(255, 255, 255, 0.3); /* Light transparent circle */
+  padding: 10px;
+}
+.logo-img {
+  width: 100%;
+  height: auto;
+  animation: rotate 10s infinite linear;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3)); /* Reduced drop shadow */
 }
 @keyframes rotate {
   from {
@@ -66,7 +77,7 @@ a:hover {
 }
 .slogan {
   font-size: 1em;
-  color: #000; /* Change text color to black */
+  color: #444141; /* Change text color to black */
   margin-bottom: 1rem;
   font-style: italic;
   background: rgba(255, 255, 255, 0.5); /* More transparent background */
@@ -76,7 +87,7 @@ a:hover {
 }
 .slogan strong {
   font-weight: bold;
-  color: #000; /* Darker color for keywords */
+  color: #1f5743; /* Darker color for keywords */
 }
 .main-content h1 {
   font-size: 2em;
@@ -183,9 +194,9 @@ a:hover {
 }
 
 @media (max-width: 599px) {
-  .logo-img {
-      width: 20%;
-      max-width: 60px;
+  .logo-circle {
+      width: 20vw;
+      height: 20vw;
   }
   .main-content h1 {
       font-size: 1.5em;
@@ -206,6 +217,3 @@ a:hover {
       font-size: 1em;
   }
 }
-
-
-
