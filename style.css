@@ -33,7 +33,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
   z-index: -1;
-  background: url(/images/Iheart-ai-brush-removebg-8upjnwdj.png) no-repeat center top; /* Updated path */
+  background: url(/assets/images/Iheart-ai-brush-removebg-8upjnwdj.png) no-repeat center top; /* Updated path */
   background-size: cover;
 }
 
