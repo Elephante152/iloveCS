@@ -33,7 +33,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
   z-index: -1;
-  background: url(/images/Iheart-ai-brush-removebg-8upjnwdj.png) no-repeat center top; /* Changed from center center to center top */
+  background: url(/images/Iheart-ai-brush-removebg-8upjnwdj.png) no-repeat center top; /* Updated path */
   background-size: cover;
 }
 
@@ -235,5 +235,3 @@ copyright p {
     font-size: 1em;
   }
 }
-
-
