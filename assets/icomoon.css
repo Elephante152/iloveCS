@@ -11,16 +11,20 @@ body {
   position: relative;
   text-align: center; /* Center text */
 }
+
 a, button {
   transition: 0.3s all ease-out;
 }
+
 a {
   color: #111;
   text-decoration: none;
 }
+
 a:hover {
   color: #0043ee;
 }
+
 #background-container {
   position: fixed;
   top: 0;
@@ -29,9 +33,17 @@ a:hover {
   height: 100%;
   overflow: hidden;
   z-index: -1;
-  background: url('/images/Iheart.png') no-repeat center center;
+  background: url(/images/Iheart-ai-brush-removebg-8upjnwdj.png) no-repeat center top; /* Changed from center center to center top */
   background-size: cover;
 }
+
+@media (min-width: 1200px) {
+  #background-container {
+    background-size: cover;
+    background-position: center 2%; /* Shift the image down more */
+  }
+}
+
 .container {
   position: relative;
   z-index: 1;
@@ -40,24 +52,28 @@ a:hover {
   max-width: 600px;
   margin: auto; /* Center the container */
 }
+
 .logo-wrapper {
   position: fixed;
   top: 10px;
   left: 10px;
 }
+
 .logo-img {
-  width: 10vw;
+  width: 7vw; /* Increased size by 1 point */
   height: auto;
   animation: rotate 20s linear 2; /* Rotate 2 times over 20 seconds */
 }
+
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(720deg); /* 720 degrees for 2 full rotations */
+    transform: rotate(720deg); /* 720 degrees for 2 full rotations */
   }
 }
+
 .slogan {
   font-size: 1em;
   color: #e2e2e2; /* Change text color to black */
@@ -68,28 +84,33 @@ a:hover {
   border-radius: 5px;
   display: inline-block;
 }
+
 .slogan strong {
   font-weight: bold;
   color: #f5ac04cb; /* Darker color for keywords */
 }
+
 .main-content h1 {
   font-size: 2em;
   font-weight: 700;
   color: #000; /* Updated color for "We are launching soon!" */
   margin-bottom: 1rem;
 }
+
 .notification-text {
   font-size: 1.2em;
   font-weight: 700;
   color: #32705c; /* Updated color for "Get notified when we launch our website" */
   margin-bottom: 1rem;
 }
+
 .text-box {
   background: #1c5542(255, 255, 255, 0.7); /* Transparent background for text */
   padding: 0.2rem 1rem; /* Reduced padding for less empty space */
   border-radius: 5px;
   display: inline-block;
 }
+
 #countdown-clock {
   font-size: 1.2em;
   display: flex;
@@ -97,6 +118,7 @@ a:hover {
   flex-wrap: wrap;
   margin: 1rem 0;
 }
+
 #countdown-clock .time {
   background-color: rgba(50, 97, 84, 0.5); /* Add transparency to the individual time blocks */
   color: #e2e2e2;
@@ -107,15 +129,18 @@ a:hover {
   flex: 1;
   min-width: 70px;
 }
+
 #countdown-clock .time > span {
   font-weight: 700;
 }
+
 #countdown-clock .time small {
   padding-top: 5px;
   font-size: 12px;
   text-transform: uppercase;
   display: block;
 }
+
 #form .form-group {
   display: flex;
   justify-content: center;
@@ -123,6 +148,7 @@ a:hover {
   margin: 1rem 0;
   width: 100%;
 }
+
 #form .form-group input.form-control {
   flex: 1;
   min-width: 250px; /* Ensure minimum width to avoid cut off */
@@ -133,6 +159,7 @@ a:hover {
   border: none;
   background: #f5f5f5;
 }
+
 #form .form-group button.submit-button {
   height: 40px;
   border-top-right-radius: 20px;
@@ -144,32 +171,40 @@ a:hover {
   padding: 0 20px;
   flex-shrink: 0;
 }
+
 #form .form-group button.submit-button:hover {
   background-color: #f5ac04cb;
 }
+
 #form .form-group button.submit-button span {
   font-weight: 700;
 }
+
 #footer .social-links {
   padding-top: 1rem;
 }
+
 #footer .social-links ul {
   display: flex;
   list-style: none;
   padding: 0;
   justify-content: center;
 }
+
 #footer .social-links li {
   padding-right: 1rem;
 }
+
 #footer .social-links ul a {
   font-size: 1.6em;
   color: #1c5542;
   text-decoration: none;
 }
+
 #footer .social-links ul a:hover {
   color: #1c5542;
 }
+
 copyright p {
   color: #333; /* Darker color for footer text */
   margin-top: 0.5rem;
@@ -178,25 +213,27 @@ copyright p {
 
 @media (max-width: 599px) {
   .logo-img {
-      width: 20vw;
-      height: auto;
+    width: 20vw;
+    height: auto;
   }
   .main-content h1 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
   .notification-text {
-      font-size: 1em;
+    font-size: 1em;
   }
   .form-group input.form-control {
-      border-radius: 20px;
-      margin-bottom: 10px;
-      background: #e4edf7;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background: #e4edf7;
   }
   .form-group button.submit-button {
-      width: 100%;
-      border-radius: 20px;
+    width: 100%;
+    border-radius: 20px;
   }
   #countdown-clock {
-      font-size: 1em;
+    font-size: 1em;
   }
 }
+
+
