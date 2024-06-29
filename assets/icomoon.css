@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
-  color: #e8e8e8;
+  color: #f9f6f6;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -29,7 +29,7 @@ a:hover {
   height: 100%;
   overflow: hidden;
   z-index: -1;
-  background: url('/images/Iheart.png') no-repeat center center fixed;
+  background: url('/images/Iheart.png') no-repeat center center;
   background-size: cover;
 }
 .container {
@@ -49,7 +49,6 @@ a:hover {
   width: 10vw;
   height: auto;
   animation: rotate 20s linear 2; /* Rotate 2 times over 20 seconds */
-  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3)); /* Reduced drop shadow */
 }
 @keyframes rotate {
   from {
@@ -61,17 +60,17 @@ a:hover {
 }
 .slogan {
   font-size: 1em;
-  color: #c2c2c2; /* Change text color to black */
+  color: #e2e2e2; /* Change text color to black */
   margin-bottom: 1rem;
   font-style: italic;
-  background: rgba(25, 43, 43, 0.5); /* More transparent background */
+  background: rgba(50, 97, 84, 0.5); /* More transparent background */
   padding: 0.2rem;
   border-radius: 5px;
   display: inline-block;
 }
 .slogan strong {
   font-weight: bold;
-  color: #448caa; /* Darker color for keywords */
+  color: #f5ac04cb; /* Darker color for keywords */
 }
 .main-content h1 {
   font-size: 2em;
@@ -82,11 +81,11 @@ a:hover {
 .notification-text {
   font-size: 1.2em;
   font-weight: 700;
-  color: #448caa; /* Updated color for "Get notified when we launch our website" */
+  color: #32705c; /* Updated color for "Get notified when we launch our website" */
   margin-bottom: 1rem;
 }
 .text-box {
-  background: rgba(25, 43, 43, 0.5); /* Transparent background for text */
+  background: #1c5542(255, 255, 255, 0.7); /* Transparent background for text */
   padding: 0.2rem 1rem; /* Reduced padding for less empty space */
   border-radius: 5px;
   display: inline-block;
@@ -99,8 +98,8 @@ a:hover {
   margin: 1rem 0;
 }
 #countdown-clock .time {
-  background-color: rgba(25, 43, 43, 0.5); /* Add transparency to the individual time blocks */
-  color: #c2c2c2;
+  background-color: rgba(50, 97, 84, 0.5); /* Add transparency to the individual time blocks */
+  color: #e2e2e2;
   border-radius: 10px;
   padding: 1rem;
   margin: 0.5rem;
@@ -146,7 +145,7 @@ a:hover {
   flex-shrink: 0;
 }
 #form .form-group button.submit-button:hover {
-  background-color: #222630;
+  background-color: #f5ac04cb;
 }
 #form .form-group button.submit-button span {
   font-weight: 700;
@@ -165,11 +164,11 @@ a:hover {
 }
 #footer .social-links ul a {
   font-size: 1.6em;
-  color: #626262;
+  color: #1c5542;
   text-decoration: none;
 }
 #footer .social-links ul a:hover {
-  color: #111;
+  color: #1c5542;
 }
 copyright p {
   color: #333; /* Darker color for footer text */
