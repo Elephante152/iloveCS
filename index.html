@@ -114,7 +114,9 @@
             const timeinterval = setInterval(updateClock, 1000);
         }
 
-        const deadline = new Date(Date.parse(new Date()) + 28 * 24 * 60 * 60 * 1000);
+        // Calculate the deadline to be 33 days, 13 hours, and 57 minutes from now
+        const now = new Date();
+        const deadline = new Date(now.getTime() + (33 * 24 * 60 * 60 * 1000) + (13 * 60 * 60 * 1000) + (57 * 60 * 1000));
         initializeClock('countdown-clock', deadline);
     </script>
 </body>
